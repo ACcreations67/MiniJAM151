@@ -862,6 +862,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719662162}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &735370680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 735370682}
+  - component: {fileID: 735370681}
+  m_Layer: 0
+  m_Name: ShaderManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &735370681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735370680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1a4c69f7a9d3ea43907b5765229dc85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _TextureWarpingFactor: 1
+  _TextureWarpingMode: 0
+  _VertexGridResolution: 100
+  _VertexWobbleMode: 0
+  _UseRetroVertexLighting: 1
+  _RetroLightingNormalFactor: 0
+  _RetroLightFalloffStart: 0
+  _FlatShadingMode: 0
+  _TriangleSortMode: 0
+  _DepthDebugView: 0
+--- !u!4 &735370682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 735370680}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.40453798, y: 0.48416382, z: 1.4815751}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &807090761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -884,7 +938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.13591
+      value: -0.026
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalPosition.y
@@ -892,11 +946,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.68892217
+      value: -0.063
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.00000037252897
+      value: -0.99696267
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalRotation.x
@@ -904,7 +958,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.077881314
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalRotation.z
@@ -916,7 +970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 351.066
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9ab319d9c0d62be4fad6966a65add866, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -1403,11 +1457,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 963194228}
+  - component: {fileID: 963194233}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194231}
   - component: {fileID: 963194230}
-  - component: {fileID: 963194232}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1567,7 +1621,7 @@ MonoBehaviour:
   EffectFlags:
     components: []
   sharedInstanceID: 
---- !u!114 &963194232
+--- !u!114 &963194233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1579,12 +1633,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 433faa8b758afed4f9295b193c697276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PixelationFactor: 0.734
-  _ColorEmulationMode: 1
+  _PixelationFactor: 1
+  _ColorEmulationMode: 3
   _FullscreenColorDepth: {x: 256, y: 256, z: 256}
   _FullscreenDitherDepth: {x: 32, y: 32, z: 32}
   _DitheringMatrixSize: 2
-  _DitheringScale: 0.665
+  _DitheringScale: 1
   _InterlacingSize: 1
   _PostProcessShader: {fileID: 4800000, guid: 56d52fd5b7c6911468179e5a7359ce0e, type: 3}
   _PostProcessShaderAccurate: {fileID: 4800000, guid: 2ebed186567d3c244a87538744a62920, type: 3}
@@ -2383,7 +2437,7 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0, b: 0.11541796, a: 1}
+  m_Color: {r: 1, g: 0.33490568, b: 0.41054398, a: 1}
   m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 118
@@ -2783,76 +2837,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f927f82901adad41819d4d79ef8b84a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BUYINVALUE: 0
-  cardConversionTable:
-  - AS
-  - 2S
-  - 3S
-  - 4S
-  - 5S
-  - 6S
-  - AS
-  - 8S
-  - 9S
-  - 10S
-  - JS
-  - QS
-  - KS
-  - AC
-  - 2C
-  - 3C
-  - 4C
-  - 5C
-  - 6C
-  - 7C
-  - 8C
-  - 9C
-  - 10C
-  - JC
-  - QC
-  - KC
-  - AH
-  - 2H
-  - 3H
-  - 4H
-  - 5H
-  - 6H
-  - 7H
-  - 8H
-  - 9H
-  - 10H
-  - JH
-  - QH
-  - KH
-  - AD
-  - 2D
-  - 3D
-  - 4D
-  - 5D
-  - 6D
-  - 7D
-  - 8D
-  - 9D
-  - 10D
-  - JD
-  - QD
-  - KD
   playerCards: 
-  playerChips: 20
-  playerBet: 0
-  playerFolded: 0
+  playerPowerups: 
+  playerActiveCard: 0
+  playerShreded: 0
+  playerAtWar: 0
   bot1Cards: 
-  bot1Chips: 20
-  bot1Bet: 0
+  bot1Powerups: 
+  bot1ActiveCard: 0
+  bot1Shreded: 0
   bot2Cards: 
-  bot2Chips: 20
-  bot2Bet: 0
+  bot2Powerups: 
+  bot2ActiveCard: 0
+  bot2Shreded: 0
   bot3Cards: 
-  bot3Chips: 20
+  bot3Powerups: 
+  bot3ActiveCard: 0
+  bot3Shreded: 0
   bot4Cards: 
-  bot4Chips: 20
-  currentBet: 1
-  pot: 0
+  bot4Powerups: 
+  bot4ActiveCard: 0
+  bot4Shreded: 0
+  cardsInPlay: 
 --- !u!1 &2072476738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2953,3 +2959,4 @@ SceneRoots:
   - {fileID: 169073911}
   - {fileID: 807090761}
   - {fileID: 1309750336}
+  - {fileID: 735370682}
