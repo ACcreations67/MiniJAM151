@@ -5,11 +5,12 @@ using UnityEngine;
 public class GameManagerScript : MonoBehaviour
 {
     public static List<string> cardConversionTable = new() { "2S", "3S", "4S", "5S", "6S", "7S", "8S", "9S", "10S", "2C", "3C", "4C", "5C", "6C", "7C", "8C", "9C", "10C", "2D", "3D", "4D", "5D", "6D", "8D", "9D", "10D", "2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "10H", "AC", "AD", "AH" };
-
+    public static List<string> powerUpConversionTable = new() { "A", "JS", "QS", "KS", "JC", "QC", "KC", "JD", "QD", "KD", "JH", "QH", "KH"};
 
     public List<int> playerCards;
     public List<int> playerPowerups;
     public int playerActiveCard;
+    public int playerPoints = 0;
     public bool playerShreded = false;
     public bool playerAtWar = false;
 
@@ -17,21 +18,25 @@ public class GameManagerScript : MonoBehaviour
     public List<int> bot1Cards;
     public List<int> bot1Powerups;
     public int bot1ActiveCard;
+    public int bot1Points = 0;
     public bool bot1Shreded = false;
     bool bot1AtWar = false;
 
+    public int bot2Points = 0;
     public List<int> bot2Cards;
     public List<int> bot2Powerups;
     public int bot2ActiveCard;
     public bool bot2Shreded = false;
     bool bot2AtWar = false;
 
+    public int bot3Points = 0;
     public List<int> bot3Cards;
     public List<int> bot3Powerups;
     public int bot3ActiveCard;
     public bool bot3Shreded = false;
     bool bot3AtWar = false;
 
+    public int bot4Points = 0;
     public List<int> bot4Cards;
     public List<int> bot4Powerups;
     public int bot4ActiveCard;
@@ -44,9 +49,12 @@ public class GameManagerScript : MonoBehaviour
 
     private bool waiting = true;
 
+    private List<int> powerUpDeck;
+
     // Start is called before the first frame update
     void Start()
     {
+        shufflePowerupDeck();
         dealCards();
         logCards();
         reset();
@@ -492,6 +500,15 @@ public class GameManagerScript : MonoBehaviour
         else
         {
             return 10;
+        }
+    }
+
+    private void shufflePowerupDeck()
+    {
+        for (int x = 13; x > 0; x-- )
+        {
+            int num = Random.Range(0, x);
+            powerUpDeck.Add(num);
         }
     }
 
