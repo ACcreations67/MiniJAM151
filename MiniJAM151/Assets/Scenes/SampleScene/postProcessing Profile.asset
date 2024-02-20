@@ -24,7 +24,7 @@ MonoBehaviour:
     m_Value: 0.721
   clamp:
     m_OverrideState: 1
-    m_Value: 0.068
+    m_Value: 0.116
 --- !u!114 &-5808747747147162942
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -40,16 +40,16 @@ MonoBehaviour:
   active: 1
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.3490566, g: 0.3490566, b: 0.3490566, a: 1}
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
   center:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0.61, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.558
+    m_Value: 0.452
   smoothness:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.526
   rounded:
     m_OverrideState: 1
     m_Value: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.253
+    m_Value: 0.226
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,10 +133,10 @@ MonoBehaviour:
   active: 1
   temperature:
     m_OverrideState: 1
-    m_Value: -82
+    m_Value: -66
   tint:
     m_OverrideState: 1
-    m_Value: 8
+    m_Value: -23
 --- !u!114 &770654295838528635
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -152,12 +152,12 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0, z: 0.5701351, w: -0.41482785}
+    m_Value: {x: 1, y: 0, z: 0.097016335, w: 0.2383055}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.46884915, z: 0, w: 0.55604595}
+    m_Value: {x: 1, y: 0.48372674, z: 0, w: 1}
   highlights:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0, y: 0.97633886, z: 1, w: 1}
   shadowsStart:
     m_OverrideState: 1
@@ -186,19 +186,19 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0.3
+    m_Value: 1
   contrast:
     m_OverrideState: 1
-    m_Value: 18
+    m_Value: 100
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 1, g: 0.5227925, b: 0, a: 1}
   hueShift:
-    m_OverrideState: 1
-    m_Value: 15
+    m_OverrideState: 0
+    m_Value: -28
   saturation:
     m_OverrideState: 1
-    m_Value: 24
+    m_Value: -16
 --- !u!114 &2588161703261124837
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -235,7 +235,7 @@ MonoBehaviour:
     m_Value: 3.3
   focalLength:
     m_OverrideState: 1
-    m_Value: 17
+    m_Value: 25
   bladeCount:
     m_OverrideState: 1
     m_Value: 6
@@ -303,7 +303,7 @@ MonoBehaviour:
     m_Value: 65472
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.20784315, b: 0, a: 1}
+    m_Value: {r: 0.7371334, g: 1, b: 0.2216981, a: 1}
   highQualityFiltering:
     m_OverrideState: 1
     m_Value: 1
@@ -335,7 +335,7 @@ MonoBehaviour:
   active: 1
   distance:
     m_OverrideState: 1
-    m_Value: 0.01
+    m_Value: 0.158
   cropToFit:
     m_OverrideState: 1
     m_Value: 1
